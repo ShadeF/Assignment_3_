@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <form name="form">
+            <div class="display">
+                <input type="text" placeholder="0" id="displayResult"/>
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button id="x" onClick="clear()">Clear</button>
+                    <input type="button" value="Del" id="y" onClick="deleteNo()">
+                </div>
+                <div class="row">
+                    <input type="button" name="b7" value="7"  onClick="appendNumber(7)">
+                    <input type="button" name="b8" value="8"  onClick="appendNumber(8)">
+                    <input type="button" name="b9" value="9"  onClick="appendNumber(9)">
+                    <input type="button" name="addb" value="+" onClick="appendNumber('+')">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b4" value="4"  onClick="appendNumber(4)">
+                    <input type="button" name="b5" value="5" onClick="appendNumber(5)">
+                    <input type="button" name="b6" value="6" onClick="appendNumber(6)">
+                    <input type="button" name="subb" value="-" onClick="appendNumber('-')">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b1" value="1" onClick="appendNumber(1)">
+                    <input type="button" name="b2" value="2" onClick="appendNumber(2)">
+                    <input type="button" name="b3" value="3" onClick="appendNumber(3)">
+                    <input type="button" name="mulb" value="*" onClick="appendNumber('*')">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b0" value="0" onClick="appendNumber(0)">
+                    <input type="button" name="potb" value="." onClick="appendNumber('.')">
+                    <input type="button" name="divb" value="/" onClick="appendNumber('/')">
+                    <input type="button" class="red" value="=" onClick="compute()">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
+
